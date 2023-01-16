@@ -1,0 +1,28 @@
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #555;
+  }
+  
+  .header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }
+
+
+  ol {
+    /* 1. Remove the default list style */  
+    list-style: none;
+  }
+  
+  ol > li {
+    /* 2. Create a custom list counter */  
+    counter-increment: listcounter;
+  }
+  
+  ol > li::before {
+    /*3. Set the new style for the list markers */
+    content: counter(listcounter) ")";
+  }

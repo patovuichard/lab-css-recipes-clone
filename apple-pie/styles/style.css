@@ -1,16 +1,8 @@
-.header img {
-    float: left;
-    width: 100px;
-    height: 100px;
-    background: #555;
-  }
+#header {
+    width:100%;
+    background-image:url("images/apple-pie.jpg");
+}  
   
-  .header h1 {
-    position: relative;
-    top: 18px;
-    left: 10px;
-  }
-
 
   ol {
     /* 1. Remove the default list style */  
@@ -24,5 +16,11 @@
   
   ol > li::before {
     /*3. Set the new style for the list markers */
-    content: counter(listcounter) ")";
+    content: counter(listcounter) ") ";
+  }
+
+
+  ul {
+    /* 1. Remove the default list style */  
+    list-style: "- ";
   }

@@ -1,26 +1,69 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
 #header {
-    width:100%;
-    background-image:url("images/apple-pie.jpg");
-}  
-  
+  background-image: url("../images/apple-pie.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 765px;
+  /* width: 120%; */
+  height: 454px;
+  padding-top: 50px;
+  position: relative;
+}
 
-  ol {
-    /* 1. Remove the default list style */  
-    list-style: none;
-  }
+#header h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 180px;
+}
+
+ol {
+  /* 1. Remove the default list style */  
+  list-style: none;
+}
   
-  ol > li {
-    /* 2. Create a custom list counter */  
-    counter-increment: listcounter;
-  }
+ol > li {
+  /* 2. Create a custom list counter */  
+  counter-increment: listcounter;
+}
   
-  ol > li::before {
-    /*3. Set the new style for the list markers */
-    content: counter(listcounter) ") ";
+ol > li::before {
+  /*3. Set the new style for the list markers */
+  content: counter(listcounter) ") ";
   }
 
 
-  ul {
-    /* 1. Remove the default list style */  
-    list-style: "- ";
+ul {
+  /* 1. Remove the default list style */  
+  list-style: "- ";
+  /* text-indent: -20px; */
+  margin: 0px 80px 20px 80px;
+}
+
+.container {
+  width: 80%;
+  /* align-items: center; */
+  margin: 60px 80px 20px 80px;
   }
+
+hr {
+  width: 80%;
+  margin: 20px auto 30px auto;
+}
+
+img {
+  margin: 0px 180px;
+  width: 50%;
+  text-align: center;
+}
